@@ -1,0 +1,21 @@
+version: '3.8' 
+
+services: 
+
+  db: 
+
+    image: mysql:latest 
+
+    container_name: mysql_container 
+
+    restart: always 
+
+    environment: 
+
+      MYSQL_ROOT_PASSWORD: jorgin123
+
+      MYSQL_DATABASE: nossobanco
+
+    ports: 
+
+      - "3306:3306" 
